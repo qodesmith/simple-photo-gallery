@@ -36,6 +36,6 @@ app.get('/gallery', function(req, res) {
 	});
 });
 
-app.listen(9001, function() {
+app.listen(process.env.PORT || 9001, function() {
 	console.log('Listening on port 9001...');
 });
