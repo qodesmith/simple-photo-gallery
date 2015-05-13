@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<script src="javascript.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="mainTitle"></div>
+		<div id="mainImage"></div>
+		<div id="description"></div>
+		<div id="thumbs"></div>
+	</div>
+
+	<template id="title-template">
+		<h1>{{this.album.name}}</h1>
+	</template>
+	
+	<template id="image-template">
+		<div class="arrow" id="leftArrow"><span><</span></div>
+		<img id="image" src="{{url}}" alt="">
+		<div class="arrow" id="rightArrow"><span>></span></div>
+	</template>
+
+	<template id="description-template">
+		<span id="title"><h2>{{title}}</h2></span>
+		<span id="blurb">Taken at the Intel Conference in {{location}} on {{date}}.</span><br>
+	</template>
+
+	<template id="thumbs-template">
+		{{#each photos}}
+		<img class="thumb" id="{{@index}}" src="{{this.thumb_url}}" alt="">
+		{{/each}}
+	</template>
+
+</body>
+</html>

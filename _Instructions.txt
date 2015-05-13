@@ -1,0 +1,24 @@
+PHOTO GALLERY CSS AND JAVASCRIPT TEST INSTRUCTIONS
+
+Please build the photo gallery illustrated in the PSD/JPG included with this test. The results should work in all major standard browsers and should incorporate presentation layer best practices. Use your creativity to bring this UI to life!
+
+1. The JSON data must come from an Ajax call made to the file "gallery_json.js".
+
+2. All photo data for the gallery test must come from the JSON object.
+
+3. Once the JSON has been loaded, the first photo and all thumbnails should appear.
+
+4. The Album name should be displayed at the top, using the correct font.
+
+5. Clicking on a thumbnail photo will display the corresponding larger photo.
+
+6. When a thumbnail is selected it should be highlighted.
+
+7. When a photo slide is shown, the title, date and location must appear below it.
+
+8. Clicking on the arrows will go to the next or previous photo.
+
+9. Please make your photo gallery look as close as possible to the mockup.
+
+
+Feel free to use any frameworks or libraries you like.
